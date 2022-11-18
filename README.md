@@ -54,23 +54,25 @@ To add complexity:
 import java.util.HashMap;
 import java.util.Map;
 
-public class Cashier {
+public class Main {
 
-    public void main(String ... args) {
+    public static void main(String ... args) {
         Map<Integer, Integer> registerStatus = new HashMap<Integer, Integer>();
         registerStatus.put(1, 30); // One Dolar, 30 bills;
         registerStatus.put(2, 3); // Two Dolar, 3 bills;
         registerStatus.put(5, 3); // Five Dolar, 3 bills;
         registerStatus.put(10, 2); // Ten Dolar, 2 bills;
-        registerStatus.put(20, 1); // twenty Dolar, 2 bills;
-        registerStatus.put(50, 1); // Ten Dolar, 2 bills;
+        registerStatus.put(20, 1); // Ten Dolar, 2 bills;
+        registerStatus.put(50, 0); // Ten Dolar, 2 bills;
         registerStatus.put(100, 0); // Ten Dolar, 2 bills;
 
-        canIGiveChange(registerStatus, 100, 3);
+        boolean result = canIGiveChange(registerStatus, 100, 9);
+        System.out.printf("Result " + result);
 
     }
-    public boolean canIGiveChange(Map<Integer,Integer> registerStatus, Integer customerPayment, Integer productCost) {
-        return true;
+
+    public static boolean canIGiveChange(Map<Integer,Integer> registerStatus, Integer customerPayment, Integer productCost) {
+        return false;
     }
 
 }
