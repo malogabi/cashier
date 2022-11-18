@@ -79,6 +79,7 @@ public class Cashier {
 
 ## Test Cases: 
 ### 1) 
+#### registerStatus: 
 ```bash
 Map: 
  Map<Integer, Integer> registerStatus = new HashMap<Integer, Integer>();
@@ -86,28 +87,55 @@ Map:
  registerStatus.put(2, 0); // Two Dolar, 0 bills;
  registerStatus.put(5, 3); // Five Dolar, 3 bills;
  registerStatus.put(10, 0); // Ten Dolar, 0 bills;
- 
- customerPayment: 20 
- productCost: 5
- 
- return: TRUE 
-``` 
-### 2) 
-#### registerStatus: 
-```bash
-Map<Integer, Integer> registerStatus = new HashMap<Integer, Integer>();
-        registerStatus.put(1, 30); 
-        registerStatus.put(2, 3);
-        registerStatus.put(5, 3);
-        registerStatus.put(10, 2);
-        registerStatus.put(20, 1);
-        registerStatus.put(50, 1);
-        registerStatus.put(100, 0); 
  ``` 
  #### customerPayment: 20 
  #### productCost: 5
  
+ ### return: TRUE
+
+### 2) 
+#### registerStatus: 
+```bash
+Map<Integer, Integer> registerStatus = new HashMap<Integer, Integer>();
+        registerStatus.put(1, 3); 
+        registerStatus.put(2, 3);
+        registerStatus.put(5, 3);
+        registerStatus.put(10, 0);
+        registerStatus.put(20, 0);
+        registerStatus.put(50, 1);
+        registerStatus.put(100, 1); 
+ ``` 
+ #### customerPayment: 60
+ #### productCost: 2
+ 
  ### return: TRUE 
 
+### 3) 
+#### registerStatus: 
+```bash
+Map<Integer, Integer> registerStatus = new HashMap<Integer, Integer>();
+        registerStatus.put(1, 0); 
+        registerStatus.put(2, 0);
+        registerStatus.put(5, 3);
+        registerStatus.put(10, 0);
+        registerStatus.put(50, 1);
+ ``` 
+ #### customerPayment: 60
+ #### productCost: 2
+ 
+ ### return: FALSE 
 
-
+### 4) 
+#### registerStatus: 
+```bash
+Map<Integer, Integer> registerStatus = new HashMap<Integer, Integer>();
+        registerStatus.put(1, 0); 
+        registerStatus.put(2, 0);
+        registerStatus.put(5, 3);
+        registerStatus.put(10, 0);
+        registerStatus.put(50, 1);
+ ``` 
+ #### customerPayment: 60
+ #### productCost: 2
+ 
+ ### return: FALSE 
