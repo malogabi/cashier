@@ -62,7 +62,7 @@ public class Cashier {
         registerStatus.put(2, 3); // Two Dolar, 3 bills;
         registerStatus.put(5, 3); // Five Dolar, 3 bills;
         registerStatus.put(10, 2); // Ten Dolar, 2 bills;
-        registerStatus.put(20, 1); // Ten Dolar, 2 bills;
+        registerStatus.put(20, 1); // twenty Dolar, 2 bills;
         registerStatus.put(50, 1); // Ten Dolar, 2 bills;
         registerStatus.put(100, 0); // Ten Dolar, 2 bills;
 
