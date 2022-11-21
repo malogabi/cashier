@@ -27,8 +27,6 @@ To simplify the problem:
 
 * The payment and the item cost are integers, not negative.
 
-* The map can contain just one of the bills or all of them. 
-
 * The bill quantity will be a cero to a positive value.
 
 To add complexity: 
