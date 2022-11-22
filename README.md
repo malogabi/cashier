@@ -60,9 +60,9 @@ public class Main {
         registerStatus.put(2, 3); // Two Dolar, 3 bills;
         registerStatus.put(5, 3); // Five Dolar, 3 bills;
         registerStatus.put(10, 2); // Ten Dolar, 2 bills;
-        registerStatus.put(20, 1); // twenty Dolar, 2 bills;
-        registerStatus.put(50, 0); // fifhty Dolar, 2 bills;
-        registerStatus.put(100, 0); // One hundred Dolar, 2 bills;
+        registerStatus.put(20, 2); // twenty Dolar, 2 bills;
+        registerStatus.put(50, 2); // fifhty Dolar, 2 bills;
+        registerStatus.put(100, 2); // One hundred Dolar, 2 bills;
 
         boolean result = canIGiveChange(registerStatus, 100, 9);
         System.out.printf("Result " + result);
