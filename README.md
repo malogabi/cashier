@@ -132,10 +132,10 @@ Map<Integer, Integer> registerStatus = new HashMap<Integer, Integer>();
         registerStatus.put(1, 0); 
         registerStatus.put(2, 0);
         registerStatus.put(5, 3);
-        registerStatus.put(10, 0);
-        registerStatus.put(50, 1);
+        registerStatus.put(10, 50);
+        registerStatus.put(50, 2);
  ``` 
- #### customerPayment: 60
- #### productCost: 2
+ #### customerPayment: 600
+ #### productCost: 67
  
  ### return: FALSE 
